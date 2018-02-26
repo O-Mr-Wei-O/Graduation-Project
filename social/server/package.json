@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec babel-node -- ./bin/www",
+    "build": "babel ./bin/www --out-file server-compiled.js",
+    "serve": "node server-compiled.js"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.14.11",
+    "serve-favicon": "^2.4.5"
+  }
+}
